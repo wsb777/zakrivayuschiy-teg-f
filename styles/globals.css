@@ -5,6 +5,8 @@
 *,
 *::after,
 *::before {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -35,6 +37,10 @@ input {
   color: currentColor;
   font-family: inherit;
   font-size: inherit;
+  background: none;
+	border: none;
+	padding: 0;
+	outline: inherit;
 }
 
 ul,
