@@ -18,6 +18,10 @@ html.theme-light .page {
   background-image: url(/images/cover-light.png);
 }
 
+html.theme-light .button__text {
+ color: var(--back-color);
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     --main-color: #000;

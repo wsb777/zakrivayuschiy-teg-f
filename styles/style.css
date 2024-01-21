@@ -104,7 +104,7 @@ main {
   transition: width 300ms, background-color 0.5s;
 }
 
-.theme-menu__button:hover::after {
+.theme-menu__button:focus-visible::after {
   width: 100%;
   background-color: var(--main-color);
 }
