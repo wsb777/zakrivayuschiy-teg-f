@@ -46,7 +46,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: clamp(1.375rem, 1.155rem + 0.939vw, 2rem);
+  gap: clamp(1.375rem, 1.155rem + 0.939vw, 1.92rem);
 }
 
 .title {
@@ -138,8 +138,8 @@ main {
   text-shadow: -1px 0 var(--main-color), 0 1px var(--main-color),
     1px 0 var(--main-color), 0 -1px var(--main-color);
   mix-blend-mode: hard-light;
-  inset-block-start: 20px;
-  inset-inline-end: 20px;
+  inset-block-start: 30px;
+  inset-inline-end: 54px;
 }
 
 @supports (
@@ -156,7 +156,7 @@ main {
 .content-block {
   display: flex;
   flex-direction: column;
-  margin: 25px 30.85px 23px 25px;
+  margin: 30px 30.85px 24px 25px;
   font-family: var(--font-card);
   font-size: 18px;
   font-weight: 465;
@@ -170,7 +170,7 @@ main {
   margin: 0 25px 25px 0;
   justify-content: end;
   align-items: end;
-  gap: 3px;
+  gap: 7px;
 }
 
 .card__icon-button {
@@ -180,10 +180,15 @@ main {
 }
 
 .card__like-button {
-  align-self: flex-end;
+  display: flex;
+  /* align-self: flex-end; */
   border: 2px solid var(--main-color);
-  padding: 11px 35px;
+  justify-content: center;
+  height: 38px;
+  align-items: center;
+  /* padding: 11px 35px; */
   font-size: 14px;
+  width: 128px;
   position: relative;
 }
 
@@ -207,7 +212,6 @@ main {
 
 .button__text {
   font-size: 14px;
-  margin-bottom: 15px;
 }
 
 .dialog[open] {
@@ -253,8 +257,8 @@ main {
   padding: 9px 17px;
 }
 
-.blur {
-  filter: blur(2px);
+.blur-brightness {
+  filter: blur(2px) brightness(60%);
 }
 
 .brightness {
@@ -281,10 +285,15 @@ main {
   filter: saturate(50%);
 }
 
+.button__text_disket {
+  font-size:14px;
+  margin: 0px 18px 15px;
+}
+
 @media (768px <= width) {
   main {
     width: 49%;
-    margin-top: 96px;
+    margin-top: 101px;
   }
 
   .header {
@@ -297,7 +306,13 @@ main {
   }
 
   .content-block {
-    margin-top: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    gap: 27px;
+  }
+
+  .button {
+    margin: 0 29px 25px 0;
   }
 
   .save {
@@ -305,6 +320,7 @@ main {
     justify-content: center;
     align-items: center;
     padding: 0px 20px;
+    margin-top: 51px;
     min-height: 53px;
   }
 
@@ -318,5 +334,13 @@ main {
 
   .save-button {
     padding: 9px 126px;
+  }
+
+  .button__text_disket {
+    margin:0;
+  }
+
+  .disket {
+    width:22px;
   }
 }
