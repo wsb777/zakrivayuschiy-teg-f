@@ -50,7 +50,7 @@
           Фритрек и нулевой спринт:<span>Подготовка к работе</span>
         </h2>
         <div class="wrapper-image">
-          <img class="image-card" src="./images/1.jpg" />
+          <img class="image-card" src="./images/1.jpg" alt="sunrise" />
           <p class="label">Я</p>
         </div>
         <div class="content-block">
@@ -65,7 +65,6 @@
           <button class="card__icon-button">
             <svg
               class="like-icon"
-              id="heart"
               width="39"
               height="36"
               xmlns="http://www.w3.org/2000/svg"
@@ -102,7 +101,7 @@
       <section class="card">
         <h2 class="title-card">1 спринт: Я — чистый лист</h2>
         <div class="wrapper-image">
-          <img class="image-card" src="./images/2.jpg" />
+          <img class="image-card blur" src="./images/2.jpg" alt="cat" />
           <p class="label">Сильно</p>
         </div>
         <div class="content-block">
@@ -121,7 +120,6 @@
           <button class="card__icon-button">
             <svg
               class="like-icon"
-              id="heart"
               width="39"
               height="36"
               xmlns="http://www.w3.org/2000/svg"
@@ -158,7 +156,11 @@
       <section class="card">
         <h2 class="title-card">1 спринт: А если не получится?</h2>
         <div class="wrapper-image">
-          <img class="image-card" src="./images/3.jpg" />
+          <img
+            class="image-card brightness"
+            src="./images/3.jpg"
+            alt="raccoon"
+          />
           <p class="label">Устал</p>
         </div>
         <div class="content-block">
@@ -175,7 +177,6 @@
           <button class="card__icon-button">
             <svg
               class="like-icon"
-              id="heart"
               width="39"
               height="36"
               xmlns="http://www.w3.org/2000/svg"
@@ -212,7 +213,11 @@
       <section class="card">
         <h2 class="title-card">2 спринт: Погоня за идеалом</h2>
         <div class="wrapper-image">
-          <img class="image-card" src="./images/4.jpg" />
+          <img
+            class="image-card sepia"
+            src="./images/4.jpg"
+            alt="cuty picture with bou and girl"
+          />
           <p class="label">За</p>
         </div>
         <div class="content-block">
@@ -231,7 +236,6 @@
           <button class="card__icon-button">
             <svg
               class="like-icon"
-              id="heart"
               width="39"
               height="36"
               xmlns="http://www.w3.org/2000/svg"
@@ -268,7 +272,11 @@
       <section class="card">
         <h2 class="title-card">2 спринт: О тех, кто рядом</h2>
         <div class="wrapper-image">
-          <img class="image-card" src="./images/5.gif" />
+          <img
+            class="image-card contrast"
+            src="./images/5.gif"
+            alt="mid night"
+          />
           <p class="label">Последние</p>
         </div>
         <div class="content-block">
@@ -288,7 +296,6 @@
           <button class="card__icon-button">
             <svg
               class="like-icon"
-              id="heart"
               width="39"
               height="36"
               xmlns="http://www.w3.org/2000/svg"
@@ -325,7 +332,11 @@
       <section class="card">
         <h2 class="title-card">3 спринт: Обходные стратегии</h2>
         <div class="wrapper-image">
-          <img class="image-card" src="./images/6.jpg" />
+          <img
+            class="image-card grayscale"
+            src="./images/6.jpg"
+            alt="ferrari"
+          />
           <p class="label">Недели</p>
         </div>
         <div class="content-block">
@@ -342,7 +353,6 @@
           <button class="card__icon-button">
             <svg
               class="like-icon"
-              id="heart"
               width="39"
               height="36"
               xmlns="http://www.w3.org/2000/svg"
@@ -379,7 +389,7 @@
       <section class="card">
         <h2 class="title-card">3 спринт: Когда опускаются руки</h2>
         <div class="wrapper-image">
-          <img class="image-card" src="./images/7.jpg" />
+          <img class="image-card invert" src="./images/7.jpg" alt="rabbit" />
           <p class="label">Много работы</p>
         </div>
         <div class="content-block">
@@ -398,7 +408,6 @@
           <button class="card__icon-button">
             <svg
               class="like-icon"
-              id="heart"
               width="39"
               height="36"
               xmlns="http://www.w3.org/2000/svg"
@@ -435,7 +444,7 @@
       <section class="card">
         <h2 class="title-card">«Сейчас я здесь»</h2>
         <div class="wrapper-image">
-          <img class="image-card" src="./images/8.png" />
+          <img class="image-card saturate" src="./images/8.png" alt="HELP" />
           <p class="label">ПОМОГИТЕ</p>
         </div>
         <div class="content-block">
@@ -456,7 +465,6 @@
           <button class="card__icon-button">
             <svg
               class="like-icon"
-              id="heart"
               width="39"
               height="36"
               xmlns="http://www.w3.org/2000/svg"
@@ -548,11 +556,20 @@
               d="M21 9.693h-1.615V8.078H21zM21 8.077h-1.615V6.462H21zM21 6.462h-1.615V4.847H21zM21 4.846h-1.615V3.231H21z"
             ></path>
           </svg>
-          <h2 class="save-text">Вставьте </br> дискету, чтобы </br>  продолжить</h2>
+          <h2 class="save-text">
+            Вставьте <br />
+            дискету, чтобы <br />
+            продолжить
+          </h2>
         </div>
-        <button class="save-button" type="button"
-        onclick="window['dialog-id'].close();"
-        aria-controls="dialog-id">OK</button>
+        <button
+          class="save-button"
+          type="button"
+          onclick="window['dialog-id'].close();"
+          aria-controls="dialog-id"
+        >
+          OK
+        </button>
       </dialog>
     </footer>
     <script src="./scripts/like.js"></script>

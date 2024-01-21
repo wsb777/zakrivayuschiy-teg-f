@@ -30,6 +30,7 @@ main {
   background-size: cover;
   background-attachment: fixed;
   font-family: var(--main-font), sans-serif;
+  font-variation-settings: "wght" 400;
   color: var(--main-color);
   display: flex;
   flex-direction: column;
@@ -119,8 +120,7 @@ main {
 
 .wrapper-image {
   position: relative;
-  border-top: 2px solid var(--main-color);
-  border-bottom: 2px solid var(--main-color);
+  border: 1px solid var(--main-color);
 }
 
 .image-card {
@@ -138,8 +138,19 @@ main {
   text-shadow: -1px 0 var(--main-color), 0 1px var(--main-color),
     1px 0 var(--main-color), 0 -1px var(--main-color);
   mix-blend-mode: hard-light;
-  inset-block-start: clamp(1.438rem, 1.291rem + 0.623vw, 1.563rem);
-  inset-inline-end: clamp(0.688rem, -0.335rem + 4.361vw, 1.563rem);
+  inset-block-start: 20px;
+  inset-inline-end: 20px;
+}
+
+@supports (
+  (text-stroke: 1px var(--main-color)) or
+    (-webkit-text-stroke: 1px var(--main-color))
+) {
+  .label {
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--main-color);
+    text-stroke: 1px var(--main-color);
+  }
 }
 
 .content-block {
@@ -240,6 +251,34 @@ main {
   color: var(--main-color);
   border: 2px solid var(--main-color);
   padding: 9px 17px;
+}
+
+.blur {
+  filter: blur(2px);
+}
+
+.brightness {
+  filter: brightness(60%);
+}
+
+.sepia {
+  filter: sepia(50%);
+}
+
+.contrast {
+  filter: contrast(90%);
+}
+
+.grayscale {
+  filter: grayscale(40%);
+}
+
+.invert {
+  filter: invert(10%);
+}
+
+.saturate {
+  filter: saturate(50%);
 }
 
 @media (768px <= width) {
