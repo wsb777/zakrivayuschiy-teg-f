@@ -77,8 +77,23 @@ main {
   font-size: 14px;
 }
 
+.theme-menu__item:focus,
+.theme-menu__button:focus-visible,
+.theme-menu__button:disabled,
+.theme-menu__button:hover {
+  outline: none;
+  opacity: 0.6;
+}
+
 .theme-menu__button:disabled {
   opacity: 0.6;
+}
+
+.theme-menu__button,
+.theme-menu__button:hover,
+.card__like-button,
+.button__text_disket  {
+  transition: 0.3s ease;
 }
 
 .theme-menu__button:disabled::before {
