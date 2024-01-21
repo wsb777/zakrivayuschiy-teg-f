@@ -240,7 +240,8 @@ main {
   width: 100%;
 }
 
-.card__like-button:focus, .card__like-button:focus-visible {
+.card__like-button:focus,
+.card__like-button:focus-visible {
   outline: none;
   box-shadow: 2px 2px 0 0 var(--main-color);
   transition: 100ms;
