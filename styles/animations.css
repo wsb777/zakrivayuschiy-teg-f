@@ -12,3 +12,87 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+@keyframes move {
+  0% {
+    inset-inline-end: 95px;
+  }
+  100% {
+    inset-inline-end: 91px;
+  }
+}
+
+.main {
+  fill: transparent;
+  transition: 0.3s 0.03s linear;
+}
+
+.body {
+  fill: transparent;
+  transition: 0.3s linear;
+}
+
+.contour {
+  transition: 0.3s 0.06s linear;
+}
+
+.stars {
+  opacity: 0;
+}
+
+.like-icon:hover .main {
+  fill: var(--main-color);
+  transition: 0.3s linear;
+}
+
+.like-icon:hover .body {
+  fill: var(--main-color);
+  transition: 0.3s 0.05s linear;
+}
+
+.like-icon:active .main {
+  fill: var(--red-color);
+  transition: 0.3s linear;
+}
+
+.like-icon:active .body {
+  fill: var(--red-color);
+  transition: 0.3s 0.05s linear;
+}
+
+.like-icon.is-liked .main,
+.like-icon.is-liked .body,
+.like-icon.is-liked .contour,
+.like-icon:active .contour {
+  fill: var(--red-color);
+}
+
+.like-icon.is-liked .heart {
+  animation: object 0.3s 0.1s ease-in alternate;
+  transform-origin: center;
+}
+
+.like-icon.is-liked .stars {
+  animation: stars 0.3s 0.3s ease-in alternate;
+}
+
+.like-icon.is-liked:active .contour {
+  transition: 0.1s linear;
+}
+
+@keyframes object {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes stars {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

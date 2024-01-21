@@ -1,7 +1,8 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-    --main-color: #00CC14;
-    --back-color: black;
-    --main-font: "PressStart2P";
-    --font-card:  "Inter";
+  --main-color: #00cc14;
+  --back-color: black;
+  --main-font: "PressStart2P";
+  --font-card: "Inter";
+  --red-color: red;
 }
