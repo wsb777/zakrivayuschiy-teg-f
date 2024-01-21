@@ -95,7 +95,7 @@ main {
 }
 
 .theme-menu__button::after {
-  content: '';
+  content: "";
   display: block;
   width: 0%;
   height: 2px;
@@ -109,19 +109,17 @@ main {
   background-color: var(--main-color);
 }
 
-.theme-menu__button,
-.theme-menu__button:hover,
-.card__like-button,
-.button__text_disket  {
-  transition: 0.3s ease;
-}
-
 .theme-menu__button:disabled::before {
   content: "▶";
   position: absolute;
   opacity: 0.6;
   animation: move 0.5s ease-in-out infinite alternate;
   inset-inline-end: 95px;
+}
+
+.card__icon-button:focus,
+.card__icon-button:focus-visible {
+  outline: none;
 }
 
 .header__theme-menu {
@@ -216,15 +214,33 @@ main {
 
 .card__like-button {
   display: flex;
-  /* align-self: flex-end; */
   border: 2px solid var(--main-color);
   justify-content: center;
   height: 38px;
   align-items: center;
-  /* padding: 11px 35px; */
   font-size: 14px;
   width: 128px;
   position: relative;
+}
+
+.card__like-button:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--main-color);
+  transition: width 0.5s ease-in-out;
+}
+
+.card__like-button:hover::before {
+  width: 100%;
+}
+
+.card__like-button {
+  transition: width 300ms;
 }
 
 .disket {
@@ -247,6 +263,8 @@ main {
 
 .button__text {
   font-size: 14px;
+  color: var(--main-color);
+  mix-blend-mode: difference;
 }
 
 .dialog[open] {
@@ -321,7 +339,7 @@ main {
 }
 
 .button__text_disket {
-  font-size:14px;
+  font-size: 14px;
   margin: 0px 18px 15px;
 }
 
@@ -372,10 +390,10 @@ main {
   }
 
   .button__text_disket {
-    margin:0;
+    margin: 0;
   }
 
   .disket {
-    width:22px;
+    width: 22px;
   }
 }
