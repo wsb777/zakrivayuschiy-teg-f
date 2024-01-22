@@ -138,11 +138,6 @@ main {
   inset-inline-end: 95px;
 }
 
-.card__icon-button:focus,
-.card__icon-button:focus-visible {
-  outline: none;
-}
-
 .header__theme-menu {
   margin-bottom: 21px;
 }
