@@ -9,6 +9,9 @@
   --back-color: black;
   --background-image: url(/images/cover-dark.png);
   --button-text: #00cc14;
+  --bg-color-1: #000;
+  --bg-color-2: #007F0C;
+  --bg-color-3: #004306;
 }
 
 :root.theme-light {
@@ -16,6 +19,9 @@
   --back-color: #fff;
   --background-image: url(/images/cover-light.png);
   --button-text:#fff;
+  --bg-color-1: #d3d3d3;
+  --bg-color-2: #e7e7e7;
+  --bg-color-3: #1a1a1a;
 }
 
 @media (prefers-color-scheme: light) {

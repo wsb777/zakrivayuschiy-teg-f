@@ -25,7 +25,22 @@ main {
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  background-image: var(--background-image);
+  background: repeating-linear-gradient(
+      90deg,
+      var(--bg-color-1) 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(
+      180deg,
+      var(--bg-color-1) 0 2px,
+      transparent 2px 4px
+    ),
+    linear-gradient(
+      180deg,
+      var(--bg-color-2) 0%,
+      var(--bg-color-2) 0.01%,
+      var(--bg-color-3) 100%
+    );
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
