@@ -7,19 +7,15 @@
 :root.theme-dark {
   --main-color: #00cc14;
   --back-color: black;
+  --background-image: url(/images/cover-dark.png);
+  --button-text: #00cc14;
 }
 
 :root.theme-light {
   --main-color: #000;
   --back-color: #fff;
-}
-
-html.theme-light .page {
-  background-image: url(/images/cover-light.png);
-}
-
-html.theme-light .button__text {
- color: var(--back-color);
+  --background-image: url(/images/cover-light.png);
+  --button-text:#fff;
 }
 
 @media (prefers-color-scheme: light) {

@@ -2,7 +2,8 @@
 :root {
   --main-color: #00cc14;
   --back-color: black;
-  --main-font: "PressStart2P";
-  --font-card: "Inter";
+  --button-text: #00cc14;
+  --main-font: "PressStart2P", fantasy;
+  --font-card: "Inter", sans-serif;
   --red-color: red;
 }
