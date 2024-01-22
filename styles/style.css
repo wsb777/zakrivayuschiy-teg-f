@@ -385,6 +385,7 @@ main {
 
   .header {
     width: 49%;
+    gap: 30px;
   }
 
   .title-card {
