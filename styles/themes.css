@@ -7,18 +7,20 @@
 :root.theme-dark {
   --main-color: #00cc14;
   --back-color: black;
-  --background-image: url(/images/cover-dark.png);
   --button-text: #00cc14;
+  --wght-text: 465;
+  --wght-title: 785;
   --bg-color-1: #000;
-  --bg-color-2: #007F0C;
+  --bg-color-2: #007f0c;
   --bg-color-3: #004306;
 }
 
 :root.theme-light {
   --main-color: #000;
   --back-color: #fff;
-  --background-image: url(/images/cover-light.png);
-  --button-text:#fff;
+  --button-text: #fff;
+  --wght-text: 400;
+  --wght-title: 700;
   --bg-color-1: #d3d3d3;
   --bg-color-2: #e7e7e7;
   --bg-color-3: #1a1a1a;
@@ -28,5 +30,11 @@
   :root {
     --main-color: #000;
     --back-color: #fff;
+    --button-text: #fff;
+    --wght-text: 400;
+    --wght-title: 700;
+    --bg-color-1: #d3d3d3;
+    --bg-color-2: #e7e7e7;
+    --bg-color-3: #1a1a1a;
   }
 }
