@@ -96,6 +96,25 @@ main {
   background: transparent;
   border: none;
   cursor: pointer;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.buttons:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: var(--main-color);
+  transition: width 0.5s ease-in-out;
+}
+
+.buttons:hover::before{
+  width:100%;
+  mix-blend-mode: difference;
 }
 
 .theme-menu__item:focus,
@@ -237,24 +256,6 @@ main {
   align-items: center;
   font-size: 14px;
   width: 128px;
-  position: relative;
-  transition: 0.3s ease;
-}
-
-.card__like-button:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: var(--main-color);
-  transition: width 0.5s ease-in-out;
-}
-
-.card__like-button:hover::before {
-  width: 100%;
 }
 
 .card__like-button:focus {
