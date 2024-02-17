@@ -97,7 +97,7 @@ main {
   border: none;
   cursor: pointer;
   position: relative;
-  transition: 0.3s ease;
+  transition: width 0.3s ease;
 }
 
 .buttons:before {
@@ -222,7 +222,7 @@ main {
   flex-direction: column;
   margin: 30px 30.85px 24px 25px;
   font-family: var(--font-card);
-  font-variation-settings: "wght" 400;
+  font-variation-settings: "wght" var(--wght-text);
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0em;
@@ -243,9 +243,11 @@ main {
   padding: 0;
 }
 
-.card__icon-button:focus,
-.card__icon-button:focus-visible {
+.card__icon-button:focus {
   outline: 1px solid var(--main-color);
+}
+.card__icon-button:focus-visible {
+  box-shadow: 2px 2px 0 0 var(--main-color);
 }
 
 .card__like-button {
@@ -258,13 +260,12 @@ main {
   width: 128px;
 }
 
-.card__like-button:focus {
+.buttons:focus {
   outline: none;
 }
 
-.card__like-button:focus-visible {
+.buttons:focus-visible {
   box-shadow: 2px 2px 0 0 var(--main-color);
-  transition: 0.3s ease;
 }
 
 .disket {
