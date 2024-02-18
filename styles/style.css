@@ -90,6 +90,7 @@ main {
 .theme-menu__button {
   text-transform: uppercase;
   font-size: 14px;
+  transition: opacity 0.5s ease;
 }
 
 .buttons {
@@ -97,7 +98,7 @@ main {
   border: none;
   cursor: pointer;
   position: relative;
-  transition: width 0.3s ease;
+  transition: box-shadow 0.3s ease;
 }
 
 .buttons:before {
@@ -112,12 +113,16 @@ main {
   transition: width 0.5s ease-in-out;
 }
 
+.buttons:hover {
+  cursor: pointer;
+}
+
 .buttons:hover::before {
   width: 100%;
   mix-blend-mode: difference;
 }
 
-.theme-menu__item:focus,
+.theme-menu__button:focus,
 .theme-menu__button:focus-visible,
 .theme-menu__button:disabled,
 .theme-menu__button:hover {
@@ -241,10 +246,11 @@ main {
   border: 2px solid transparent;
   height: 38px;
   padding: 0;
+  transition: box-shadow 0.5s ease;
 }
 
 .card__icon-button:focus {
-  outline: 1px solid var(--main-color);
+  outline: none;
 }
 .card__icon-button:focus-visible {
   box-shadow: 2px 2px 0 0 var(--main-color);
@@ -284,11 +290,6 @@ main {
   background-color: var(--back-color);
   border: 2px solid var(--main-color);
   gap: 8px;
-}
-
-.save:hover,
-.save-button:hover {
-  cursor: pointer;
 }
 
 .button__text {

@@ -21,70 +21,17 @@
   }
 }
 
-.main {
-  fill: transparent;
-  transition: 0.1s linear;
-}
-
-.body {
-  fill: transparent;
-  transition: 0.1s linear;
-}
-
-.contour {
-  transition: 0.1s linear;
-}
-
-.stars {
-  opacity: 0;
-}
-
-.like-icon:hover .main {
-  fill: var(--main-color);
-  transition: 0.1s linear;
-}
-
-.like-icon:hover .body {
-  fill: var(--main-color);
-  transition: 0.1s linear;
-}
-
-.like-icon:active .main {
-  fill: var(--red-color);
-  transition: 0.1s linear;
-}
-
-.like-icon:active .body {
-  fill: var(--red-color);
-  transition: 0.1s linear;
-}
-
-.like-icon.is-liked .main,
-.like-icon.is-liked .body,
-.like-icon.is-liked .contour {
-  fill: var(--red-color);
-}
-
-.like-icon.is-liked .heart {
-  animation: object 0.1s ease-in alternate;
-  transform-origin: center;
-}
-
-.like-icon.is-liked .stars {
-  animation: stars 0.1s ease-in alternate;
-}
-
-.like-icon.is-liked:active .contour {
-  fill: var(--main-color);
-  transition: 0.1s linear;
-}
-
 @keyframes object {
-  from {
-    transform: scale(1);
+  0% {
+    scale: 1;
   }
-  to {
-    transform: scale(1.5);
+
+  95% {
+    scale: 1.5;
+  }
+
+  100% {
+    scale: 1;
   }
 }
 
@@ -95,4 +42,71 @@
   100% {
     opacity: 1;
   }
+}
+
+.main {
+  fill: transparent;
+  transition: fill 0.3s 0.03s linear;
+}
+
+.body {
+  fill: transparent;
+  transition: fill 0.3s linear;
+}
+
+.contour {
+  transition: fill 0.1s linear;
+}
+
+.stars {
+  opacity: 0;
+}
+
+.like-icon:hover .main {
+  fill: var(--main-color);
+  transition: fill 0.3s linear;
+}
+
+.like-icon:hover .body {
+  fill: var(--main-color);
+  transition: fill 0.3s 0.05s linear;
+}
+
+.like-icon:active .main {
+  fill: var(--red-color);
+  transition: fill 0.3s linear;
+}
+
+.like-icon:active .body {
+  fill: var(--red-color);
+  transition: fill 0.3s 0.05s linear;
+}
+
+.like-icon.is-liked .main {
+  transition: fill 0.3s linear;
+  fill: var(--red-color);
+}
+
+.like-icon.is-liked .body {
+  transition: fill 0.3s 0.05s linear;
+  fill: var(--red-color);
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--red-color);
+  transition: fill 0.3s 0.06s linear;
+}
+
+.like-icon.is-liked .object {
+  animation: object 0.3s 0.1s ease-in alternate;
+  transform-origin: center;
+}
+
+.like-icon.is-liked .stars {
+  animation: stars 0.3s 0.3s ease-in alternate;
+}
+
+.like-icon.is-liked:active .contour {
+  fill: var(--main-color);
+  transition: 0.1s linear;
 }
