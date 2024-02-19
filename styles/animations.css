@@ -26,12 +26,8 @@
     scale: 1;
   }
 
-  95% {
-    scale: 1.5;
-  }
-
   100% {
-    scale: 1;
+    scale: 1.5;
   }
 }
 
@@ -104,9 +100,4 @@
 
 .like-icon.is-liked .stars {
   animation: stars 0.3s 0.3s ease-in alternate;
-}
-
-.like-icon.is-liked:active .contour {
-  fill: var(--main-color);
-  transition: 0.1s linear;
 }
